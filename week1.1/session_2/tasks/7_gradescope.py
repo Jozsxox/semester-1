@@ -10,9 +10,9 @@ try:
     num1 = int(num1)
     num2 = int(num2)
 except ValueError:
-    print("that is not a number")
+    print("That is not a number")
     exit()
-ans = num1 + num2
+ans = num1 * num2
 # print out the result
 print(ans)
 # There is an extra point available for validating that they entered numbers!

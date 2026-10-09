@@ -3,10 +3,16 @@
 # You are going to write a very simple program:
 
 # Ask a user to enter two numbers (one per input)
-num1 = input("enter num1: ")
-num2 = input("enter num2: ")
+num1 = input()
+num2 = input()
 # multiply those numbers together
-ans = int(num1)+int(num2)
+try:
+    num1 = int(num1)
+    num2 = int(num2)
+except ValueError:
+    print("that is not a number")
+    exit()
+ans = num1 + num2
 # print out the result
 print(ans)
 # There is an extra point available for validating that they entered numbers!

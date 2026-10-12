@@ -23,9 +23,9 @@ if count % 2 == 1:
 else:
     a = number_list[count//2 - 1]
     b = number_list[count//2]
-    median = (a + b)//2
+    median = (a + b)/2
 
 print(f"Minimum = {minimum}")
 print(f"Maximum = {maximum}")
 print(f"Mean = {mean}")
-print(f"Medium = {median}")
+print(f"Median = {median}")

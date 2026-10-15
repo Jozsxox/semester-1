@@ -13,5 +13,16 @@ for i in values:
 
 print(newval)
 
+
+fruit = ['2','5','78','21']
+print(fruit)
+
+new_val = []
+for i in fruit:
+    if i % 2 == 0:
+        new_val.append(2 * i)
+    else:
+        new_val.append(i)
+print(new_val)
 # write the list comprehension equivalent to the `for` loop
 

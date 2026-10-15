@@ -1,6 +1,10 @@
 # Week 1.3, Session 2: Home Sensor Filtering
 
-home_sensors = {"Living Room Thermostat": 85, "Front Door Lock": 15, "Kitchen Smoke Detector": 90, "Basement Flood Sensor": 8}
+home_sensors = {"Living Room Thermostat": 85, "Front Door Lock": 15, "Kitchen Smoke Detector": 90, "Basement Flood Sensor": 77}
+
+greater_home_sensors = {home_sensors: level for home_sensors, level in home_sensors.items() if level >= 20}
+
+print(greater_home_sensors)
 
 # dictionary comprehension to filter all sensors with battery level less than 20
 # Expected Output: {'Front Door Lock': 15, 'Basement Flood Sensor': 8}

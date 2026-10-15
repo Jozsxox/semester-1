@@ -15,3 +15,18 @@
 # story.txt - 290
 # story2.txt - 326
 # glasses.txt - 210
+
+with open("story.txt","r") as f:
+    content = f.readlines()
+    char_total=[]
+    for content in content:
+        words = content.split()
+        char_total.extend(words)
+    print(len(char_total))
+
+
+with open("story2.txt","r") as f:
+    content2= f.read()
+    words2 = content2.split()
+    word_count = len(words2)
+    print(word_count)

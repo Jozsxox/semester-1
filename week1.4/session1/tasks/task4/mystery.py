@@ -30,9 +30,10 @@ print(mystery_func("012345"))
 print(mystery_func("ABC"))
 
 
+
 # Can you predict the output of the following lines of code?
 # Uncomment the lines of code one by one and run the program
 # to see if you are right?
 
-# print(mystery_func("X"))
-# print(mystery_func("[2, 3]"))
+print(mystery_func("X"))
+print(mystery_func("[2, 3]"))

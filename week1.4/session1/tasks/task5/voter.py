@@ -14,7 +14,6 @@ def check_vote_eligibility(age):
     else:
         print("You are not eligible to vote yet.")
 
-
 age = int(input("Enter your age: "))
 check_vote_eligibility(age)
 

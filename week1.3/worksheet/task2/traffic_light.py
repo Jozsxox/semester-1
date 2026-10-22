@@ -10,6 +10,25 @@ systime = 0
 maxtime = int(input())  # read an integer number of steps (>0)
 
 state = "red"
+countdown = states[state]
+
+while systime < maxtime:
+    print(f"Time {systime:03} State {state}")
+    
+    countdown -= 1
+
+    if countdown == 0:
+        if state == "red":
+            state = "red_amber"
+        elif state == "red_amber":
+            state = "green"
+        elif state == "green":
+            state = "amber"
+        elif state == "amber":
+            state = "red"
+        countdown = states[state]
+
+    systime += 1
 
 print(f"Time {systime:03} State {state}")
 

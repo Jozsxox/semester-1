@@ -1,6 +1,30 @@
 # Week 1.5, Session 1: Task 4
+import math
 
-# Add one or more import statements here to give this program
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+class Circle:
+
+    def __init__(self, radius, centre):
+        self.r = radius
+        self.c = centre
+
+    def area(self):
+        return math.pi*self.r**2
+
+    def perimeter(self):
+        return 2*math.pi*self.r
+
+c = Circle(4, Point(1 ,0))
+print(c.area())
+print(c.perimeter())
+
+
+# Add one or more impo:
+# rt statements here to give this program
 # access to the Point and Circle classes defined in geometry.py
 
 # Write a program here that

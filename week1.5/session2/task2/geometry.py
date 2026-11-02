@@ -31,7 +31,9 @@ class Point:
         """
         return math.hypot(self.x - p.x, self.y - p.y)
 
-    # Implement a __str__() method here
+    # Implement a __str__() method 
+    def __str__(self):
+        return f"({self.x},{self.y})"
 
 
 class Circle:
@@ -63,3 +65,13 @@ class Circle:
         return 2.0 * math.pi * self.radius
 
     # Implement a __str__() method here
+    def __str__(self):
+        return f"({self.radius},{self.centre})"
+
+a = Point(2 , 1)
+b = Point(3 , 5)
+c = Circle(4, a)
+print(c.area())
+print(c.perimeter())
+print(a.distance())
+print(a.distance_to(b))
